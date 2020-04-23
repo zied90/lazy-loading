@@ -1,0 +1,19 @@
+<div *ngIf="!loading">
+<div *ngIf="user$">
+  <h1>{{user$.name}}</h1>
+
+  <ul>
+    <li><strong>Username:</strong> {{user$.username}}</li>
+    <li><strong>Email:</strong> {{user$.email}}</li>
+    <li><strong>Phone:</strong> {{user$.phone}}</li>
+  </ul>
+</div>
+</div>
+<div class="app-loading" *ngIf="loading">
+  <div class="lds-css ng-scope">
+    <div class="lds-pacman">
+      <div><div></div><div></div><div></div></div>
+      <div><div></div><div></div><div></div></div>
+    </div>
+  </div>
+</div>
